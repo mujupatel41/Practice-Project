@@ -3,10 +3,6 @@ const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
 const mapToken = process.env.MAP_TOKEN;
 const geocodingClient = mbxGeocoding({ accessToken: mapToken });
 
-module.exports.costomRoute = (req, res)=>{
-    res.redirect("https://practice-project-fp30.onrender.com/listings");
-};
-
 
 module.exports.index = async (req, res)=>{
     let allListings = await Listing.find();
