@@ -4,7 +4,7 @@ const mapToken = process.env.MAP_TOKEN;
 const geocodingClient = mbxGeocoding({ accessToken: mapToken });
 
 module.exports.costomRoute = (req, res)=>{
-    res.redirect("https://practice-project-fp30.onrender.com/");
+    res.redirect("https://practice-project-fp30.onrender.com/listings");
 };
 
 
